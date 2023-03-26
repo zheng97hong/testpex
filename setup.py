@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 setup(name='pex',
       version='1.0.0',
@@ -32,7 +32,7 @@ setup(name='pex',
       author_email='entysec@gmail.com',
       license='MIT',
       python_requires='>=3.7.0',
-      packages=find_packages(),
+      packages=find_namespace_packages(),
       include_package_data=True,
       install_requires=[
           'adb-shell', 'requests', 'paramiko',
